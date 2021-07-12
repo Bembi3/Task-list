@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     static TaskList taskList = new TaskList();
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Menu Cycle
-        while(true){
+        while (true) {
             System.out.println("");
             System.out.println("Выберите действие:\n" +
                     "1. Добавить задачу\n" +
@@ -13,7 +14,7 @@ public class Main {
                     "3. Удалить задачу\n" +
                     "0. Выход\n");
             int input = scanner.nextInt();
-            switch(input){
+            switch (input) {
                 case (1):
                     addTasks();
                     continue;
